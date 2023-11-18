@@ -4,22 +4,23 @@ import team1 from './assets/team1.png'
 import team2 from './assets/team2.png'
 import team3 from './assets/team3.png'
 import team4 from './assets/team4.png'
+import archi from './assets/architect.png'
 
 const App = () => {
   return (
     <>
-    <header className='bg-[#FDF4E8]'>
-      <div className='flex w-full justify-center px-20 pt-10'>
+    <header className='bg-[#FDF4E8] pt-[20px] pb-[20px]'>
+      <div className='flex w-full justify-center px-20'>
         <div className='w-[1250px] flex justify-between items-center'>
           <div className='w-[30%] '>
-            <h2 className='font-bold text-[45px] leading-[53px] text-[#131313]'>G3 Architects</h2>
+            <h2 className='font-bold text-[45px] leading-[53px] text-[#131313]' id='g3'>G3 Architects</h2>
           </div>
           <div className='w-[40%]'>
             <ul className='flex justify-between'>
-              <li className='cursor-pointer'>Home</li>
-              <li className='cursor-pointer'>About</li>
-              <li className='cursor-pointer'>Contact</li>
-              <li className='cursor-pointer'>Login</li>
+              <li className='cursor-pointer text-[#424242]'>Home</li>
+              <li className='cursor-pointer text-[#424242]'>About</li>
+              <li className='cursor-pointer text-[#424242]'>Contact</li>
+              <li className='cursor-pointer text-[#424242]'>Login</li>
             </ul>
           </div>
         </div>
@@ -49,6 +50,41 @@ const App = () => {
             <p className='font-normal text-[16px] text-[#727272] leading-[26px] mt-[30px]'>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, 
               by injected humour, or randomised words which don't look even</p>
             <button className='bg-[#FF900E] font-semibold text-[20px] leading-[23px] p-[21px] mt-8 border-none rounded-md text-center text-[#FFFFFF] cursor-pointer mb-10'>Explore More</button>
+          </div>
+        </div>
+      </section>
+      <section className='m-auto pt-[120px]' >
+        <div className='flex' id='container'>
+          <div className='w-[45%] pr-[100px]' id='textcolumn'>
+            <h2 className='font-bold text-[45px] leading-[53px] text-[#131313] pl-[20px] border-l-4 border-[#FF900E]'>Features you will love & Enjoy</h2>
+            <p className='font-normal text-[16px] text-[#727272] leading-[26px] mt-[30px]'>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even</p>
+            <div className='p-[30px] shadow-lg mb-[20px]' id='textbox'>
+              <h6 className='font-semibold text-[20px] leading-[23px] text-[#131313] '>Desktop & Mobile Version</h6>
+              <p className='font-normal text-[16px] text-[#727272] leading-[26px] '>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                Praesentium quae aspernatur delectus repellat incidunt expedita?</p>
+            </div>
+            <div className='p-[30px] shadow-lg mb-[20px]' id='textbox'>
+              <h6 className='font-semibold text-[20px] leading-[23px] text-[#131313] '>Drag & Drop Builder</h6>
+              <p className='font-normal text-[16px] text-[#727272] leading-[26px] '>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                Praesentium quae aspernatur delectus repellat incidunt expedita?</p>
+            </div>
+            <div className='p-[30px] shadow-lg mb-[20px]' id='textbox'>
+              <h6 className='font-semibold text-[20px] leading-[23px] text-[#131313] '>Awesome Modern Design</h6>
+              <p className='font-normal text-[16px] text-[#727272] leading-[26px] '>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                Praesentium quae aspernatur delectus repellat incidunt expedita?</p>
+            </div>
+            <div className='p-[30px] shadow-lg mb-[20px]' id='textbox'>
+              <h6 className='font-semibold text-[20px] leading-[23px] text-[#131313] '>Super Easy to Edit</h6>
+              <p className='font-normal text-[16px] text-[#727272] leading-[26px] '>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                Praesentium quae aspernatur delectus repellat incidunt expedita?</p>
+            </div>
+          </div>
+          <div className="w-[55%]" id='Imagecol'>
+            <img src={archi} alt="archi" className='w-full' />
+            <button className="bg-[#FF900E] pt-[35px] pb-[35px] pr-[42px] pl-[42px] border-none rounded-xl relative left-[-62px] top-[-97px]">
+              <h1 className='font-bold text-[45px] leading-[55px] text-[#FFFFFF]'>10+ Years</h1>
+              <h6 className='font-medium text-[25px] leading-[40px] text-center text-[#FFF]'>Experience</h6>
+            </button>
           </div>
         </div>
       </section>
