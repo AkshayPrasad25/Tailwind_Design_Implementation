@@ -27,7 +27,7 @@ const App = () => {
       </div>
     </header>
     <main>
-      <section className='w-full flex justify-center pt-[70px] pb-[100px] bg-[#FDF4E8]'>
+      <section className='w-full flex justify-center pt-[70px] pb-[100px] bg-[#FDF4E8]' id='Banner'> 
         <div className='w-[1250px] text-center'>
           <h1 className='font-bold text-[64px] leading-[75px] text-[#131313]'>Brand New<br /> Group of Architects</h1>
           <p className='font-normal text-[16px] leading-[26px] text-[#727272] mt-[30px]'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
@@ -37,7 +37,8 @@ const App = () => {
         </div>
       </section>
       
-      <section className='m-auto flex flex-wrap pt-[120px] pb-[100px]'>
+
+      <section className='m-auto flex flex-wrap pt-[120px] pb-[100px]' id='about'>
         <div className="flex items-center justify-center">
           <div className="grid grid-cols-[repeat(2,1fr)] gap-[10px] w-[53%]">
             <img className='w-full' src={team1} alt="" />
@@ -53,7 +54,9 @@ const App = () => {
           </div>
         </div>
       </section>
-      <section className='m-auto pt-[120px]' >
+
+
+      <section className='m-auto pt-[120px]' id='features'>
         <div className='flex' id='container'>
           <div className='w-[45%] pr-[100px]' id='textcolumn'>
             <h2 className='font-bold text-[45px] leading-[53px] text-[#131313] pl-[20px] border-l-4 border-[#FF900E]'>Features you will love & Enjoy</h2>
@@ -63,22 +66,26 @@ const App = () => {
               <p className='font-normal text-[16px] text-[#727272] leading-[26px] '>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
                 Praesentium quae aspernatur delectus repellat incidunt expedita?</p>
             </div>
+            
             <div className='p-[30px] shadow-lg mb-[20px]' id='textbox'>
               <h6 className='font-semibold text-[20px] leading-[23px] text-[#131313] '>Drag & Drop Builder</h6>
               <p className='font-normal text-[16px] text-[#727272] leading-[26px] '>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
                 Praesentium quae aspernatur delectus repellat incidunt expedita?</p>
             </div>
+
             <div className='p-[30px] shadow-lg mb-[20px]' id='textbox'>
               <h6 className='font-semibold text-[20px] leading-[23px] text-[#131313] '>Awesome Modern Design</h6>
               <p className='font-normal text-[16px] text-[#727272] leading-[26px] '>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
                 Praesentium quae aspernatur delectus repellat incidunt expedita?</p>
             </div>
+
             <div className='p-[30px] shadow-lg mb-[20px]' id='textbox'>
               <h6 className='font-semibold text-[20px] leading-[23px] text-[#131313] '>Super Easy to Edit</h6>
               <p className='font-normal text-[16px] text-[#727272] leading-[26px] '>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
                 Praesentium quae aspernatur delectus repellat incidunt expedita?</p>
             </div>
           </div>
+
           <div className="w-[55%]" id='Imagecol'>
             <img src={archi} alt="archi" className='w-full' />
             <button className="bg-[#FF900E] pt-[35px] pb-[35px] pr-[42px] pl-[42px] border-none rounded-xl relative left-[-62px] top-[-97px]">
